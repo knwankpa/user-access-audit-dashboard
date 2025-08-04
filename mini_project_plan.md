@@ -1,10 +1,10 @@
 # Mini SQL–Tableau Project for Portfolio
 
-This mini project is designed around the work you already do – using SQL to audit user access in an Oracle database and visualising the results in Tableau.  The project will show that you can design a dataset, write SQL to answer security questions, and build dashboards that make access reviews efficient and transparent.  It combines database modelling, SQL querying and Tableau visualisation, reflecting best practices for building portfolio projects and emphasising industry relevance【364304039507579†L56-L74】.
+This mini project is designed using SQL to audit user access in an Oracle database and visualising the results in Tableau.  The project will show that you can design a dataset, write SQL to answer security questions, and build dashboards that make access reviews efficient and transparent.  It combines database modelling, SQL querying and Tableau visualisation.
 
 ## 1. Project scenario
 
-Imagine you have been asked to assess user access across several internal systems.  The objective is to identify users with high‑level privileges, see which departments hold the most high‑level permissions and present the results in an interactive dashboard.  For privacy and compliance reasons, you will also explore Row‑Level Security (RLS) in Tableau so that auditors only see data relevant to their region or department【533720745108507†L34-L63】.
+Imagine you have been asked to assess user access across several internal systems.  The objective is to identify users with high‑level privileges, see which departments hold the most high‑level permissions and present the results in an interactive dashboard.  For privacy and compliance reasons, you will also explore Row‑Level Security (RLS) in Tableau so that auditors only see data relevant to their region or department.
 
 ## 2. Design a sample database
 
@@ -20,7 +20,6 @@ Create a small relational database (e.g., in **SQLite** or **PostgreSQL**; both 
 
 Populate the tables with fictional data for ~25–50 users across departments like *Finance*, *HR*, *IT*, *Sales* and *Compliance*.  Assign a mix of `High`, `Medium` and `Low` access roles across systems such as *Financial System*, *HR System* and *IT Admin*.  You can write a SQL script or use Python to generate the data.
 
-> **Tip:** Dataquest suggests choosing projects that align with your interests and that demonstrate a breadth of skills such as data cleaning, complex joins and reporting【364304039507579†L56-L74】.  Designing this schema yourself showcases data modelling and ensures the dataset contains the elements you need【480319488411087†L10-L19】.
 
 ## 3. Write SQL queries
 
@@ -101,5 +100,3 @@ To make the project more impressive, you could add:
 * **Audit log analysis.**  Introduce an `AccessLogs` table (user, system, timestamp, action) and build a dashboard showing login patterns over time, highlighting anomalous activity.
 * **Parameterised reporting.**  Use Tableau parameters to let users change the definition of “high‑level” (e.g., include medium‑level roles) and observe how the results change.
 * **Automation.**  Use a Python or shell script to refresh the data, run SQL queries and publish the dashboard to Tableau Server automatically.
-
-By following these steps, you’ll have a comprehensive yet manageable project that clearly reflects your day‑to‑day responsibilities and demonstrates your ability to turn data into actionable insights for security and audit teams.
