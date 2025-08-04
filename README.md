@@ -1,4 +1,4 @@
-## User Access Audit Dashboard
+## User Access Audit Dashboard /  SQL–Tableau Project
 
 This project demonstrates how to use SQL and data visualization to audit user access across multiple systems.  It simulates a small organisation where employees are assigned roles on different systems, and builds a dashboard highlighting users with high‑level privileges, distribution of access by system and department, and optional row‑level security for auditors.
 
