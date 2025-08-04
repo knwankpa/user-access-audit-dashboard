@@ -62,22 +62,22 @@ Develop SQL queries that answer typical audit questions.  Some examples:
    ORDER BY high_role_count DESC;
    ```
 
-4. **Implement Row‑Level Security (optional).**  To restrict what each auditor sees, join the `Users` table with `SecurityMapping` and filter on matching regions using dynamic functions (Tableau’s `USERNAME()` function can retrieve the logged‑in user)【533720745108507†L34-L63】.
+4. **Implement Row‑Level Security (optional).**  To restrict what each auditor sees, join the `Users` table with `SecurityMapping` and filter on matching regions using dynamic functions (Tableau’s `USERNAME()` function can retrieve the logged‑in user).
 
-These queries demonstrate ability to join multiple tables, filter and aggregate data – core SQL skills emphasised in many portfolio guides【364304039507579†L56-L74】.
+
 
 ## 4. Build a Tableau dashboard
 
-Use the SQL results as your data source in Tableau (e.g., by connecting Tableau directly to the database or by exporting results to a CSV).  Create a dashboard with the following components:
+Use the SQL results as your data source in Tableau (by connecting Tableau directly to the database or by exporting results to a CSV).  Create a dashboard with the following components:
 
 * **Summary bar chart** – Show the number of high‑level users per system.  This lets auditors quickly spot which system has the most privileged users.
 * **Departmental distribution** – Use a pie chart or stacked bar to visualise how high‑level privileges are spread across departments.
 * **Detailed table** – List individual users with high‑level roles, with filters for system, department and access level.
-* **Row‑Level Security filter (optional)** – Implement RLS so that when a user logs into Tableau Server/Cloud, they only see data for their region or department【533720745108507†L34-L63】.  This can be done using a dynamic calculated field referencing `USERNAME()` and the `SecurityMapping` table【533720745108507†L69-L99】.
+* **Row‑Level Security filter (optional)** – Implement RLS so that when a user logs into Tableau Server/Cloud, they only see data for their region or department.  This can be done using a dynamic calculated field referencing `USERNAME()` and the `SecurityMapping` table】.
 
-Design your dashboard with interactivity (filters and highlights) so that security and audit teams can drill down to specific systems or departments quickly.  Document your design decisions and explain how the dashboard improves the review process.
 
-## 5. Document and share the project
+
+## 5. Document Project
 
 1. **Repository setup.**  Create a public repository (e.g., on GitHub) containing:
    - The SQL script to create and populate the database.
@@ -91,12 +91,12 @@ Design your dashboard with interactivity (filters and highlights) so that securi
    - **Database design and normalisation** (creating tables and relationships).
    - **Complex SQL querying** (joins, filters, aggregations and conditional logic).
    - **Data visualization and storytelling** with Tableau.
-   - **Understanding of compliance and security** (through RLS and careful data handling【533720745108507†L34-L63】).
+   - **Understanding of compliance and security** (through RLS and careful data handling).
 
 ## 6. Extending the project
 
-To make the project more impressive, you could add:
+To make My project more impressive, I could add:
 
 * **Audit log analysis.**  Introduce an `AccessLogs` table (user, system, timestamp, action) and build a dashboard showing login patterns over time, highlighting anomalous activity.
 * **Parameterised reporting.**  Use Tableau parameters to let users change the definition of “high‑level” (e.g., include medium‑level roles) and observe how the results change.
-* **Automation.**  Use a Python or shell script to refresh the data, run SQL queries and publish the dashboard to Tableau Server automatically.
+* **Automation.**  Use Python or a shell script to refresh the data, run SQL queries and publish the dashboard to Tableau Server automatically.
