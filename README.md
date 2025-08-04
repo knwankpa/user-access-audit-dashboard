@@ -31,6 +31,3 @@ This project demonstrates how to use SQL and data visualization to audit user ac
    - Which departments have the most high‑level privileges?  (See query 3.)
 3. **Visualise the results.** Import the SQL results or the provided CSV into Tableau or another visualisation tool.  Recreate the example charts or design your own dashboard with filters for system and department.  Use the `SecurityMapping` table and Tableau’s `USERNAME()` function to implement row‑level security if deploying to Tableau Server.
 
-### Portfolio tips
-
-According to Dataquest’s advice on building SQL portfolio projects, selecting projects that align with your interests and demonstrate a variety of SQL skills—such as data modelling, complex joins and reporting—will help you showcase your abilities to potential employers【364304039507579†L56-L74】.  Documenting your process and using a version control system like Git to track changes to your SQL scripts is also recommended【364304039507579†L137-L145】.  Use this repository to illustrate your ability to build a small database, write meaningful queries and create insightful visualisations.
